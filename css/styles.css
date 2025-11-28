@@ -1,0 +1,581 @@
+/* --- Global Styles --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #2A3A4A;
+    color: #FFFFFF;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #4A90E2;
+    transition: color 0.3s ease;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+}
+
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.4em; }
+
+p {
+    margin-bottom: 1em;
+    color: #BCC8D4;
+}
+
+.section-subheading {
+    font-size: 1.1em;
+    max-width: 600px;
+    margin: 0 auto 2em auto;
+    text-align: center;
+}
+
+/* --- Header & Navigation --- */
+header {
+    padding: 1.5em;
+    border-bottom: 1px solid #3E6990;
+    text-align: center;
+    background-color: #243340;
+}
+
+.logo a {
+    color: #FFFFFF;
+}
+
+.logo h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2.2em;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+nav {
+    margin: 1em 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 0.5em;
+}
+
+nav a {
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+nav a:hover {
+    color: #4A90E2;
+}
+
+.header-cta {
+    display: inline-block;
+    background-color: #4A90E2;
+    color: #FFFFFF;
+    padding: 0.6em 1.2em;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.header-cta:hover {
+    background-color: #357ABD;
+}
+
+/* --- Main Sections General --- */
+main section {
+    padding: 3em 1.5em;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #4A90E2;
+    color: #FFFFFF;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 1em 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #357ABD;
+}
+
+/* --- Hero Section --- */
+.hero {
+    background-color: #2A3A4A;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    color: #FFFFFF;
+}
+
+.opening-hours {
+    background-color: #3E6990;
+    padding: 1em;
+    border-radius: 8px;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.opening-hours p {
+    color: #FFFFFF;
+    margin-bottom: 0.2em;
+}
+
+/* --- Services Section --- */
+.services {
+    background-color: #243340;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+}
+
+.service-card, .service-card-promo {
+    background-color: #3E6990;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-card a {
+    display: block;
+    padding: 1em;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-card a:hover {
+    background-color: #4A90E2;
+}
+
+.service-card-promo {
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2A3A4A;
+    border: 2px solid #4A90E2;
+}
+
+/* --- Clinic Section --- */
+.clinic-text ul {
+    list-style-type: none;
+    margin-top: 1.5em;
+    text-align: left;
+}
+
+.clinic-text li {
+    margin-bottom: 1.5em;
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.clinic-text li i {
+    font-size: 1.8em;
+    color: #4A90E2;
+    min-width: 40px;
+}
+
+.clinic-text li h3 {
+    margin-bottom: 0.2em;
+    color: #FFFFFF;
+}
+
+/* --- Testimonials --- */
+.testimonials {
+    background-color: #243340;
+}
+
+.testimonial-card {
+    background-color: #2A3A4A;
+    border: 1px solid #3E6990;
+    padding: 2em;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 1em auto;
+    border: 3px solid #4A90E2;
+}
+
+.rating {
+    margin-top: 1em;
+    color: #f39c12;
+}
+
+/* --- Services Page --- */
+.page-hero {
+    background-color: #243340;
+    padding: 3em 1.5em;
+    text-align: center;
+}
+
+.service-item {
+    background-color: #3E6990;
+    border-radius: 8px;
+    margin-bottom: 2em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-item-text {
+    padding: 1.5em;
+    text-align: left;
+}
+
+.service-item-text ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 0.5em;
+}
+
+.service-item-text ul li i {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    color: #4A90E2;
+}
+
+/* --- Technology Section Grid --- */
+.technology-section {
+    background-color: #2A3A4A;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    margin-top: 2em;
+}
+
+.tech-item {
+    background-color: #3E6990;
+    padding: 1.5em;
+    border-radius: 8px;
+    text-align: left;
+    border-left: 4px solid #4A90E2;
+}
+
+.tech-item h3 {
+    font-size: 1.2em;
+    color: #FFFFFF;
+}
+
+/* --- Team Page --- */
+.team-member {
+    background-color: #3E6990;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-member-image img {
+    width: 100%;
+    height: auto;
+}
+
+.team-member-text {
+    padding: 1.5em;
+    text-align: left;
+}
+
+.team-member-text .team-title {
+    color: #4A90E2;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 0.5em;
+}
+
+/* --- Articles Page --- */
+.article-featured {
+    background-color: #2A3A4A;
+}
+
+.article-list {
+    background-color: #243340;
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+}
+
+.article-card {
+    background-color: #3E6990;
+    border-radius: 8px;
+    padding: 1.5em;
+    text-align: left;
+}
+
+.cta-button-small {
+    display: inline-block;
+    background-color: #4A90E2;
+    color: #FFFFFF;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+}
+
+/* --- Contact Page --- */
+.contact-section {
+    background-color: #243340;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.contact-form-container, .contact-details-container {
+    background-color: #3E6990;
+    padding: 2em;
+    border-radius: 8px;
+}
+
+/* Form Styles */
+form label {
+    display: block;
+    color: #FFFFFF;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Styling Text, Email, Tel, Select, Date, Textarea */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1.5em;
+    border-radius: 5px;
+    border: 1px solid #2A3A4A;
+    background-color: #f0f7ff;
+    color: #333;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+form button.cta-button {
+    width: 100%;
+    margin-top: 0;
+}
+
+.contact-info-list {
+    list-style: none;
+    text-align: left;
+    margin: 1.5em 0;
+}
+
+.contact-info-list li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 1.2em;
+}
+
+.contact-info-list i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: #4A90E2;
+}
+
+.contact-offer {
+    background-color: #4A90E2;
+    padding: 1em;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 3em 1.5em;
+    border-top: 1px solid #3E6990;
+    background-color: #2A3A4A;
+}
+
+footer p {
+    color: #BCC8D4;
+    margin: 0.25em 0;
+}
+
+
+/* MEDIA QUERIES  */
+
+/* --- Tablet (min-width: 768px) --- */
+@media (min-width: 768px) {
+    /* Header: Row layout */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 1.5em 2em;
+    }
+    
+    nav { margin: 0; }
+
+    /* Services Grid: 2 columns */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Tech Grid: 2 columns */
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Article Grid: 2 columns */
+    .article-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5em;
+    }
+
+    /* Hero: Row layout (Text Left, Image Right) */
+    .hero {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        padding: 4em 2em;
+    }
+    
+    .hero-text { flex: 1; }
+    .hero-image { flex: 1; }
+    
+    .opening-hours { margin: 0; }
+
+    /* Clinic: Row layout */
+    .clinic {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 2em;
+        text-align: left;
+    }
+    .clinic-image, .clinic-text { flex: 1; }
+
+    /* Services List Items: Side by side */
+    .service-item {
+        flex-direction: row;
+    }
+    .service-item-image { flex: 0 0 40%; }
+    .service-item-text { flex: 1; }
+    
+    /* Alternating Layout for Services */
+    .service-item.alt {
+        flex-direction: row-reverse;
+    }
+
+    /* Team Members: Side by side */
+    .team-member {
+        flex-direction: row;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .team-member-image { flex: 0 0 35%; }
+    .team-member-text { flex: 1; display: flex; flex-direction: column; justify-content: center;}
+    
+    /* Alternating Layout for Team */
+    .team-member.alt {
+        flex-direction: row-reverse;
+    }
+}
+
+/* --- Desktop (min-width: 1024px) --- */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    /* 3 Columns for Services & Tech */
+    .services-grid, .tech-grid, .article-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Contact Page: Side by Side */
+    .contact-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .contact-form-container { flex: 3; }
+    .contact-details-container { flex: 2; }
+}

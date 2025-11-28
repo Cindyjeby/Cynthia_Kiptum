@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100SMILES Dental Care - Book Online</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <h1>smiles dental</h1>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="articles.html">Patient Articles</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="header-cta">Get in Touch</a>
+        </header>
+
+        <main>
+            <section class="page-hero">
+                <h1>Book an Appointment</h1>
+                <p class="section-subheading">Use our new online booking system to schedule your visit and get a discount!</p>
+            </section>
+
+            <section class="contact-section">
+                <div class="contact-container">
+                    <div class="contact-form-container">
+                        <h2>Online Booking Form</h2>
+                        <p>Book your visit via this form to claim your <strong>25% discount!</strong></p>
+                        
+                        <form id="bookingForm" action="#" method="POST" novalidate>
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="e.g. John Smith" required>
+                            
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="e.g. john@example.com" required>
+                            
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="e.g. 0400 123 456" required>
+                            
+                            <label for="service">Service Required *</label>
+                            <select id="service" name="service" required>
+                                <option value="">-- Please Select a Service --</option>
+                                <option value="checkup">Annual Dental Check-Up (10% Off)</option>
+                                <option value="cleaning">Professional Cleaning</option>
+                                <option value="whitening">Teeth Whitening</option>
+                                <option value="orthodontics">Orthodontic Consultation</option>
+                                <option value="pain">Tooth Pain / Emergency</option>
+                                <option value="free-checkup">Free Dental Checkup Event (July 5th)</option>
+                            </select>
+
+                            <label for="date">Preferred Date *</label>
+                            <input type="date" id="date" name="date" required>
+                            
+                            <label for="message">Additional Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Any specific concerns?"></textarea>
+                            
+                            <button type="submit" class="cta-button">Confirm Booking</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-details-container">
+                        <h2>Contact Details</h2>
+                        <ul class="contact-info-list">
+                            <li><i class="fa-solid fa-location-dot"></i> 33 Fantail Street, Razole, Queensland.</li>
+                            <li><i class="fa-solid fa-phone"></i> <a href="tel:0750005599">07 5000 5599</a></li>
+                            <li><i class="fa-solid fa-fax"></i> 07 4567 9999</li>
+                            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:admin@100smilesdentalcare.com.au">admin@100smilesdentalcare.com.au</a></li>
+                        </ul>
+
+                        <h3><i class="fa-solid fa-clock"></i> Trading Hours</h3>
+                        <div class="contact-hours">
+                            <p><strong>Monday - Friday:</strong> 8:30am - 6:30 PM</p>
+                            <p><strong>Saturday - Sunday:</strong> 8:30am - 1:00 PM</p>
+                        </div>
+                        
+                        <h3><i class="fa-solid fa-tags"></i> Special Announcements</h3>
+                        <div class="contact-offer">
+                            <p><strong>Free Dental Checkup:</strong> Join us on Saturday, July 5th starting at 9 am!</p>
+                            <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.3); margin: 10px 0;">
+                            <p><strong>25% Discount</strong> on your next visit when booking online!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p><strong>100SMILES Dental Care</strong></p>
+                <p>33 Fantail Street, Razole, Queensland</p>
+                <p>Call: <a href="tel:0750005599">07 5000 5599</a></p>
+                <p>&copy; 2025 100SMILES Dental Care. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
